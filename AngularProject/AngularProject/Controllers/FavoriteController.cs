@@ -89,10 +89,10 @@ public class FavoriteController : Controller
 
         return Ok(newFavorite);
     }
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteFavorite(int id, int userId)
+    [HttpDelete("{favoriteId}/{userId}")]
+    public async Task<IActionResult> DeleteFavorite(int favoriteId, int userId)
     {
-        var favoriteEvent = await _appDbContext.Favorites.FirstOrDefaultAsync(x => x.favoriteId == id && x.userId == userId);
+        var favoriteEvent = await _appDbContext.Favorites.FirstOrDefaultAsync(x => x.favoriteId == favoriteId && x.userId == userId);
 
         if (favoriteEvent == null) 
         {
