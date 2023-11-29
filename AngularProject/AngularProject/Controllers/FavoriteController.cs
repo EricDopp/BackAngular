@@ -64,15 +64,15 @@ public class FavoriteController : Controller
         return Ok(favorite);
     }
     [HttpPost]
-    public async Task<IActionResult> AddFavorite(int eventId, int userId)
+    public async Task<IActionResult> AddFavorite(Favorite favorite)
     {
-        var existingEvent = await _appDbContext.Events.FirstOrDefaultAsync(e => e.eventId == eventId);
+        var existingEvent = await _appDbContext.Events.FirstOrDefaultAsync(e => e.eventId == favorite.eventId);
         if (existingEvent == null)
         {
             return BadRequest("The specified event does not exist.");
         }
 
-        var existingFavorite = await _appDbContext.Favorites.FirstOrDefaultAsync(f => f.eventId == eventId && f.userId == userId);
+        var existingFavorite = await _appDbContext.Favorites.FirstOrDefaultAsync(f => f.eventId == favorite.eventId && f.userId == favorite.userId);
         if (existingFavorite != null)
         {
             return BadRequest("The event is already in the user's favorites.");
@@ -80,8 +80,8 @@ public class FavoriteController : Controller
 
         var newFavorite = new Favorite
         {
-            userId = userId,
-            eventId = eventId,
+            userId = favorite.userId,
+            eventId = favorite.eventId,
         };
 
         _appDbContext.Favorites.Add(newFavorite);
