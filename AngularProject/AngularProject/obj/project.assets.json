@@ -2440,19 +2440,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Eric Dopp\\.nuget\\packages\\": {}
+    "C:\\Users\\0uts1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\LearnToCode\\GCLabs\\AngularProject\\BackAngular\\AngularProject\\AngularProject\\AngularProject.csproj",
+      "projectUniqueName": "C:\\Users\\0uts1\\OneDrive\\Documents\\programming-stuff\\CSharp.NET-Bootcamp\\projects\\angularmidterm\\BackAngular\\AngularProject\\AngularProject\\AngularProject.csproj",
       "projectName": "AngularProject",
-      "projectPath": "C:\\LearnToCode\\GCLabs\\AngularProject\\BackAngular\\AngularProject\\AngularProject\\AngularProject.csproj",
-      "packagesPath": "C:\\Users\\Eric Dopp\\.nuget\\packages\\",
-      "outputPath": "C:\\LearnToCode\\GCLabs\\AngularProject\\BackAngular\\AngularProject\\AngularProject\\obj\\",
+      "projectPath": "C:\\Users\\0uts1\\OneDrive\\Documents\\programming-stuff\\CSharp.NET-Bootcamp\\projects\\angularmidterm\\BackAngular\\AngularProject\\AngularProject\\AngularProject.csproj",
+      "packagesPath": "C:\\Users\\0uts1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\0uts1\\OneDrive\\Documents\\programming-stuff\\CSharp.NET-Bootcamp\\projects\\angularmidterm\\BackAngular\\AngularProject\\AngularProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Eric Dopp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\0uts1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2522,7 +2522,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
